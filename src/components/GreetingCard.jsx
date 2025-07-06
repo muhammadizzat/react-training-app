@@ -1,8 +1,12 @@
 import React from 'react'
 
-const GreetingCard = () => {
+const GreetingCard = (props) => {
   return (
-    <div>GreetingCard</div>
+
+    <div style={{ border: '1px solid gray', padding: '1rem', borderRadius: '10px' }}>
+        <h2>Hello, {props.name}!</h2>
+        <p>Welcome to React</p>
+    </div>
   )
 }
 
